@@ -1,0 +1,14 @@
+with open('k8-0.txt', 'r') as f:
+    x=f.readline()
+    k=1
+    maxLen=1
+    b=0
+    for i in range(0,len(x)-1):
+        if x[i]==x[i+1]:
+            k+=1
+            if maxLen<k:
+                maxLen=k 
+                b=x[i]
+        else:
+             k=1
+    print(b,maxLen)
