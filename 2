@@ -1,0 +1,16 @@
+with open('24.txt', 'r') as f:
+    x=f.readline()
+    k=1
+    maxLen=1
+    b=''
+    c=map(str, input().split())
+    for i in range(len(x)+1):
+        if x[i]>[i+1]:
+            k+=1
+            if maxLen<k:
+                maxLen=k 
+                b=x[i]
+                c=b.append 
+        else:
+             k=1
+    print(c)
